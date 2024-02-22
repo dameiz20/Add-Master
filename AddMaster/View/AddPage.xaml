@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AddMaster.View.AddPage"
+            Padding="20,50,20,0">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Add Master Pro" FontSize="Title" HorizontalOptions= "Center"/>
+            <StackLayout Padding="0,75,0,0">
+                <Label Text="First Number" />
+                <Entry Keyboard="Numeric" x:Name="txtFirstNumber"/>
+            </StackLayout>
+            <StackLayout Padding="0,25,0,0">
+                <Label Text="Second Number" />
+                <Entry Keyboard="Numeric" x:Name="txtSecondNumber"/>
+            </StackLayout>
+            <StackLayout Padding="0,75,0,0">
+                <Label x:Name="lblDisplay" Text="0" HorizontalOptions="Center" FontSize="Title" /> 
+            </StackLayout>
+            <StackLayout Padding="0,75,0,0" Orientation="Horizontal">
+                <Button Text="Add" HorizontalOptions="FillAndExpand" Clicked ="Add_Clicked" />
+                <Button Text="Clear" HorizontalOptions="FillAndExpand" Clicked ="Clear_Clicked" />
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
